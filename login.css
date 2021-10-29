@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+section {
+  background: rgb(236, 231, 231);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: 0px;
+}
+.left {
+  position: relative;
+  top: 23%;
+  left: 13%;
+}
+.left h1 {
+  color: rgb(209, 20, 29);
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+.left p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+.right {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+.right form {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+}
+.right form input {
+  height: 70px;
+  width: 350px;
+  border-radius: 8px;
+  border: gray solid 1px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.right form input:focus {
+  border: rgb(51, 109, 235) solid 2px;
+  outline: none;
+  transition: 3s;
+}
+.right form input::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.right form button {
+  height: 50px;
+  width: 350px;
+  background: rgb(209, 12, 12);
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border-radius: 6px;
+}
+.right form button:hover {
+  color: black;
+  background: rgb(40, 27, 218);
+  /* transition-delay: 2s; */
+  /* transition-duration: 5s; */
+  /* transition: 3s;
+  transition-property: background color;
+  transition-timing-function: ease-out; */
+  /* transform: scale(2); */
+  animation-name: anime;
+  animation-duration: 4s;
+}
+.right form a {
+  display: inline-block;
+  margin: 15px;
+  color: rgb(69, 137, 238);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+.right form button:last-child {
+  height: 50px;
+  width: 200px;
+  background: rgb(75, 179, 6);
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border-radius: 6px;
+}
+.right form button:last-child:hover {
+  background: rgb(3, 126, 3);
+}
+
+.right form a:hover {
+  text-decoration: underline;
+}
+
+#eye {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 31%;
+  right: 18%;
+  background: transparent;
+  border: none;
+}
+@keyframes anime {
+  0% {
+    background: blue;
+  }
+  100% {
+    background: chartreuse;
+  }
+}

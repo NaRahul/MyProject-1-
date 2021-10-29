@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1 align="center">Registration</h1>
+    <br />
+    <hr />
+    <form action="table.html">
+      <!-- to link a file  -->
+      <table align="center" cellspacing="10" bgcolor="gold">
+        <tr>
+          <td><label for="name"> Name:</label></td>
+          <td><input type="text" placeholder="Enter your name" id="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="mail"> Email:</label></td>
+          <td><input type="email" placeholder="Your mail id" id="mail" /></td>
+        </tr>
+        <tr>
+          <td><label for="mobile">Mobile:</label></td>
+          <td>
+            <input
+              type="tel"
+              placeholder="Enter your mobile number"
+              value="+91"
+              maxlength="13"
+              id="mobile"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>DOB:</label></td>
+          <td><input type="datetime-local" /></td>
+        </tr>
+        <tr>
+          <td><label for=""> Password:</label></td>
+          <td>
+            <input type="password" minlength="8" maxlength="16" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button><a href="./login.html">Creat Acount</a></button>
+          </td>
+          <td>
+            <button><input type="Reset" /></button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

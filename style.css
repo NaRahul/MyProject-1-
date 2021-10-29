@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial Narrow Bold", sans-serif;
+}
+nav {
+  background: rgba(30, 123, 245, 0.986);
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: snow;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100;
+  font-weight: bold;
+  position: absolute;
+  left: 50px;
+}
+nav ul {
+  float: right;
+  margin-right: 25px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 15px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.featured {
+  width: 100%;
+  height: 70vh;
+  background: url(./boruto-anime-naruto-4k.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.featured-text {
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+}
+.featured-text button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: black;
+  margin: 20px 0px;
+  color: white;
+  font-size: large;
+}
+.latest {
+  padding: 50px 100px;
+}
+.gallery {
+  text-align: center;
+}
+.gallery h1 {
+  color: darkblue;
+  font-weight: bold;
+  font-size: 35px;
+}
+.gallery p {
+  color: gray;
+  margin: 15px 0;
+}
+.picks-galary {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  cursor: pointer;
+}
+.pic {
+  position: relative;
+  height: 280px;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  background: rgb(197, 193, 193);
+  padding: 30px;
+}
+.svg {
+  height: 40px;
+  width: 40px;
+}
+.social {
+  display: flex;
+}

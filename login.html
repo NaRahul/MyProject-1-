@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <section>
+      <div class="left">
+        <h1>BoRuTo</h1>
+        <p>Login to watch</p>
+        <p>with the people in your life.</p>
+      </div>
+      <div class="right">
+        <form action="">
+          <input
+            type="email"
+            placeholder="Email address or phone number"
+            name=""
+            id=""
+          />
+          <br />
+          <input type="password" placeholder="Password" id="pass" /> <br />
+          <button><a href="./index.html">Log in</a></button><br />
+          <a href="">Forgotten password?</a> <br />
+          <hr />
+          <button>Creat New Acount</button>
+        </form>
+      </div>
+      <button id="eye" onclick="active()">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAotJREFUSEvlllFu2kAQhmdwJfut9ATlBqVvLBKqc4LSEzTcgJ6g5ARRTtD0BuQEsbqV14/mBKU3cN5iJDzV2Bh2115wHqw81FIkUMx++8/88+8ivNKDr8SFBjgMw2EURVnfGzLA0+l07BE9AtE3mST3fcKPYFa6z/MtALwtgUSLPuGG4tlkcg2IP45Ke4Q3euyClxXZ7T5RUYwRMdTakBJRhoNBKuP4oWt7Wl3dgAOsAWDeYdEMENdeUdxEScJtcz7OcWqBnxYh2gBi7fwRALy3CUS0ehMEd64JaQVzWYs8fySAsbXgT6nUdZuMmRBcEf77Wv8fAdKB71+1wVvn2IBW6j7Ui7ESROQNMYRVR0R09ztJIn4nnExGe27N4TcueNNcQnA/Px9AD1Kp+dmyVy8+eb4/0pXNhOAcqNQj3ss4XuiVOj9OANke8SqO4/QcHBFvfsXxym6BAbdG0w6QPwAwtBboAt8i0YoAUA+dQyilB/NlUql3Wv+rj4YiogVUs1obpQu8XEcq5a6ipvr4kg3mnRul6lb2J6mUUbGZEEsAuLVj2NydEOxSzuqt5/sf2SwvhJdmrMt5KHXdvr9SKZ75ym96Pw3VmhO7wm2TzcwJ+SKV4olpgsteO8agK5xPNS8I1vs858OmVm9UoqG4DAA+DJ6fIy00Io9owdnbGQ7AOV2VlWjjBUFop5czMi14GQLAicSOPwXMye16pep6OqCtinVjFLvdkoi+28HQ+fuZ8/ziZa/MXkROJe5XdTs5//CZXEeu8yZzEWy4Xog5HxAF0RBPJ1eGiHwZSD3fj8oR7HCTeRH4klTnaFYmM+5wvYHL0dSVE21kkhzP917BRzjA0h6p3sGu9vx/4H/DR5su1tJOwgAAAABJRU5ErkJggg=="
+        />
+      </button>
+    </section>
+    <script>
+      function active() {
+        var eye = document.getElementById("pass");
+        if (eye.type === "password") {
+          eye.type = "text";
+        } else {
+          eye.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>

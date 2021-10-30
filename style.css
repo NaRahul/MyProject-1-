@@ -12,6 +12,8 @@ nav {
   background: rgba(30, 123, 245, 0.986);
   height: 80px;
   width: 100%;
+  position: sticky;
+  top: 0px;
 }
 label.logo {
   color: snow;
@@ -35,6 +37,9 @@ nav ul li a {
   color: white;
   font-size: 17px;
   text-transform: uppercase;
+}
+nav ul li :hover {
+  color: black;
 }
 .featured {
   width: 100%;
@@ -84,6 +89,7 @@ nav ul li a {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1; */
   grid-gap: 20px;
   cursor: pointer;
 }
@@ -105,4 +111,10 @@ nav ul li a {
 }
 .social {
   display: flex;
+}
+.pic img {
+  transition: 1.5s;
+}
+img:hover {
+  transform: scale(1.1);
 }

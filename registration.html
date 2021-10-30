@@ -5,14 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style-type: none;
+        box-sizing: border-box;
+      }
+      h1 {
+        margin-left: 45%;
+      }
+      nav {
+        background: rgba(30, 123, 245, 0.986);
+        height: 80px;
+        width: 100%;
+      }
+      label.logo {
+        color: snow;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100;
+        font-weight: bold;
+        position: absolute;
+        left: 50px;
+      }
+      nav ul {
+        float: right;
+        margin-right: 25px;
+      }
+      nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0px 15px;
+      }
+      nav ul li a {
+        color: white;
+        font-size: 17px;
+        text-transform: uppercase;
+      }
+      table {
+        margin-left: 40%;
+        height: 400px;
+        width: 300px;
+      }
+      nav ul li :hover {
+        color: black;
+      }
+    </style>
   </head>
   <body>
-    <h1 align="center">Registration</h1>
+    <nav>
+      <label class="logo">BoRuTo</label>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./registration.html">Register</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+    <h1>Registration</h1>
     <br />
     <hr />
     <form action="table.html">
       <!-- to link a file  -->
-      <table align="center" cellspacing="10" bgcolor="gold">
+      <table cellspacing="10" bgcolor="gold">
         <tr>
           <td><label for="name"> Name:</label></td>
           <td><input type="text" placeholder="Enter your name" id="name" /></td>
